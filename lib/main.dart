@@ -74,48 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
       value: Random().nextDouble(),
       date: DateTime.now(),
     ),
-    Transaction(
-      id: Random().nextDouble().toString(),
-      title: 'Compra ${Random().nextDouble().toString()}',
-      value: Random().nextDouble(),
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: Random().nextDouble().toString(),
-      title: 'Compra ${Random().nextDouble().toString()}',
-      value: Random().nextDouble(),
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: Random().nextDouble().toString(),
-      title: 'Compra ${Random().nextDouble().toString()}',
-      value: Random().nextDouble(),
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: Random().nextDouble().toString(),
-      title: 'Compra ${Random().nextDouble().toString()}',
-      value: Random().nextDouble(),
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: Random().nextDouble().toString(),
-      title: 'Compra ${Random().nextDouble().toString()}',
-      value: Random().nextDouble(),
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: Random().nextDouble().toString(),
-      title: 'Compra ${Random().nextDouble().toString()}',
-      value: Random().nextDouble(),
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: Random().nextDouble().toString(),
-      title: 'Compra ${Random().nextDouble().toString()}',
-      value: Random().nextDouble(),
-      date: DateTime.now(),
-    ),
   ];
 
   List<Transaction> get _recentTransactions {
@@ -158,7 +116,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      title: Text('Despesas Pessoais'),
+      title: Text(
+        'Despesas Pessoais',
+        style: TextStyle(
+          fontSize: 20 * MediaQuery.of(context).textScaleFactor,
+        ),
+      ),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.add),
