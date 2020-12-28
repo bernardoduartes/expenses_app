@@ -35,7 +35,6 @@ class Chart extends StatelessWidget {
 
   double get _weekTotalValue {
     return groupedTransactions.fold(0.0, (sum, tr) {
-      print(tr);
       return sum + tr['value'];
     });
   }
