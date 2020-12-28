@@ -64,30 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
         Duration(days: 3),
       ),
     ),
-    Transaction(
-      id: 't2',
-      title: 'Conta de Luz',
-      value: 211.30,
-      date: DateTime.now().subtract(
-        Duration(days: 3),
-      ),
-    ),
-    Transaction(
-      id: 't2',
-      title: 'Conta de Luz',
-      value: 211.30,
-      date: DateTime.now().subtract(
-        Duration(days: 3),
-      ),
-    ),
-    Transaction(
-      id: 't2',
-      title: 'Conta de Luz',
-      value: 211.30,
-      date: DateTime.now().subtract(
-        Duration(days: 3),
-      ),
-    ),
   ];
 
   List<Transaction> get _recentTransactions {
@@ -109,9 +85,6 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _transactions.add(newTransaction);
     });
-
-    print('_addTransaction');
-    print(_recentTransactions);
 
     Navigator.of(context).pop();
   }
