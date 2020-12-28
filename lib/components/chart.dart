@@ -23,7 +23,7 @@ class Chart extends StatelessWidget {
         if (sameWeekDay && sameMonth && sameYear) {
           totalSum += recentTransaction.value;
         }
-      }
+      });
 
       return {
         'day': DateFormat.E().format(weekDay)[0],
