@@ -18,10 +18,13 @@ class ChartBar extends StatelessWidget {
       builder: (ctx, constraints) {
         return Column(
           children: [
-            Container(
-              height: constraints.maxHeight * 0.15,
-              child: FittedBox(
-                child: Text('${value.toStringAsFixed(2)}'),
+            Expanded(
+              flex: 2,
+              child: Container(
+                height: constraints.maxHeight * 0.15,
+                child: FittedBox(
+                  child: Text('${value.toStringAsFixed(2)}'),
+                ),
               ),
             ),
             SizedBox(height: constraints.maxHeight * 0.05),
